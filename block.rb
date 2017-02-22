@@ -19,7 +19,7 @@ def time_execution
   t1 = Time.now
   method = yield
   t2 = Time.now
-  puts "End time: #{t2}\n\n"
+  puts "\n\nEnd time: #{t2}\n\n"
   puts "-------------Time finished-------------\n\n"
   puts "Result: #{t2 - t1} seconds"
 end
