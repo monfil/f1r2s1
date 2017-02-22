@@ -1,0 +1,18 @@
+Script: Single word converter to Pig Latin
+
+GET a word from user input
+IF the word starts with a vowel, add "way" to the end
+ELSE replace the word with its pig latin equivalent
+  GET all of the consonants before the first vowel in the word
+  SET the consonants at the end of the word and add "ay"
+ENDIF
+RETURN the pig-latin word
+
+Script: Sentence converter to Pig Latin
+GET a sentence from user input
+Put in an array each word of the sentence
+Iterate in the array to get each word
+Use the single word converter in the word
+Put in the new word in Pig Latin in a new array
+Convert the new array in a string
+RETURN the string translated
